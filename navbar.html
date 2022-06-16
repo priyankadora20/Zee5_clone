@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Document</title>
+   <style>
+    /* NAVBAR STYLING  */
+
+#menu {
+ display: flex;
+ 
+ justify-content: space-between;
+ padding: 10px;
+ background-color:#0f0617;;
+ color:rgb(253, 253, 253);
+}
+a{
+  text-decoration: none;
+}
+li {
+ list-style: none;
+ list-style-type: none;
+}
+ a {
+ color:rgb(246, 246, 246);
+}
+
+/* NAVBAR MENU */
+#menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+#menu li:hover {
+ background-color:black;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+#menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative; 
+}
+.dropdown {
+ background-color:black;
+ padding: 55px;
+ position: absolute; 
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 50px;
+}
+.dropdown li {
+ padding: 5px;
+ 
+ width: 400px;
+ text-align: center;
+}
+
+.services:hover .dropdown {
+ display: block;
+}
+#button:nth-child(1){
+  color:white;
+  background-color: black;
+  padding:10px;
+  border-radius: 5px;
+
+}
+
+#buttons:last-child{
+  color:white;
+  background-color:purple;
+  padding:10px;
+  border-radius: 5px;
+
+}
+#lname{
+padding:10px;
+}
+#logo{
+width: 50px;
+height:50px;
+}
+
+.box{
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+
+}
+#menu{
+  justify-content: space-between;
+}
+
+   </style>
+ </head>
+ <body>
+
+
+     
+
+      <div id="menu">
+        
+        <div class="box">
+          <li ><img src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.51.66" id="logo"></li>
+          <li><a href="/">Home</a></li>
+    
+    
+          <li class="services">
+           <a href="/">TV shows</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a href="/">Top hindi shows</a></li>
+             <li><a href="/">Top marathi shows</a></li>
+             <li><a href="/">New in zee5</a></li>
+             <li><a href="/">Top English shows u can't miss</a></li>
+            
+           </ul>
+         </li>
+    
+    
+          
+          <li class="services">
+             <a href="/">Movies</a>
+             <!-- DROPDOWN MENU -->
+             <ul class="dropdown">
+               <li><a href="/">Latest Movies on ZEE5</a></li>
+               <li><a href="/">500+ Free Movies</a></li>
+               <li><a href="/">Popular Movies On ZEE5</a></li>
+               <li><a href="/">Top ZEE5 Movies in Marathi</a></li>
+               
+             </ul>
+           </li>
+    
+    
+          <li class="services">
+            <a href="/">Web series</a>
+            <!-- DROPDOWN MENU -->
+            
+          </li>
+    
+          <li class="services">
+    
+             <a href="/">News</a>
+             <!-- DROPDOWN MENU -->
+             <ul class="dropdown">
+               <li><a href="/">Free Live News Channel</a></li>
+               <li><a href="/">HEADLINES</a></li>
+               <li><a href="/">SHOWBIZ</a></li>
+               <li><a href="/">Around the Global 3</a></li>
+               
+             </ul>
+           </li>
+          </div>
+    
+         <div class="box">
+          <li class="services">
+    
+          <input type="text" id="lname" name="lname"placeholder="Search for Movies,website etc.">
+          <!-- DROPDOWN MENU -->
+         
+        </li>
+    
+        <li class="services">
+    
+          <a href="/">A</a>
+          <!-- DROPDOWN MENU -->
+         
+        </li>
+      
+       <li><a href="/"><button id="button">LOGIN</button></a></li>
+       <li><a href="/"><button id="buttons">BUY PLAN</button></a></li>
+    
+       <li> <label class="3HorizontalLines"> &#9776;</label></li>
+         </div>
+          
+      </div>
+      
