@@ -138,8 +138,8 @@
   form.addEventListener("submit", function(event){
            event.preventDefault();
       let data={
-          email:form1.email.value,
-          password:form1.password.value,
+          email:form.email.value,
+          password:form.password.value
       }
       if(checklogin(data.email,data.password)==true){
          localStorage.setItem("login",JSON.stringify(data));
