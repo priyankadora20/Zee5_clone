@@ -144,7 +144,7 @@
       if(checklogin(data.email,data.password)==true){
          localStorage.setItem("login",JSON.stringify(data));
          alert("Login Successfully");
-         
+         window.location.href = 'mainpage.html';
       } else{
           alert("Wrong Username or password")
       }
@@ -177,6 +177,7 @@
       if(checkloginn(data.number)==true){
          localStorage.setItem("login",JSON.stringify(data));
          alert("Login Successfully");
+         window.location.href = 'mainpage.html';
       } else{
           alert("Mobile Number Not Found")
       }
