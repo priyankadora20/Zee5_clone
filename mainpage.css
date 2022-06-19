@@ -1,0 +1,86 @@
+#bodymain {
+  background-color: #0f0617;
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  margin-top: 45px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 210px);
+
+  grid-template-rows: 320px;
+
+  gap: -10px;
+}
+
+#container>div{
+    margin: auto;
+}
+
+#container2 {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  margin-top: 45px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 210px);
+
+  grid-template-rows: 320px;
+
+  gap: -10px;
+}
+#container3 {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  margin-top: 45px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: 200px;
+  margin-bottom: -5px;
+  gap: -10px;
+}
+
+.box_1:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.img1 {
+  width: 2%;
+  height: 4%;
+
+  position: absolute;
+
+  border-radius: 51%;
+}
+
+.img2 {
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+h2 {
+  color: white;
+  margin-bottom: -60px;
+  margin-left: 20px;
+}
+
+/* large screens */
+@media all and (min-width: 1024px) {
+  /* write code here */
+  /* medium screens */
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  /* write code here */
+  /* small screens */
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  /* write code here */
+}
